@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas 3</title>
+    <style type="text/css">
+        div { 
+        width: 150px;
+        height: 150px;
+        background-color: yellow;
+        border: solid black;
+        }
+    </style>
+    <!-- tag untuk memangil jquery -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+    // script untuk fade in, fade out, dan fade to
+    $(document).ready(function(){
+    $(".tombolfadein").click(function(){ $("div").fadeIn("slow")}) 
+    $(".tombolfadeout").click(function(){ $("div").fadeOut("slow")})
+    $(".tombolfadeto").click(function(){ $("div").fadeTo("slow", 0.3)})   
+    })
+    </script>
+</head>
+<body>
+    <!-- Kotak yang akan di fade in, fade out, dan fade to-->
+    <div></div> <br> 
+    <!-- Button untuk mengeksekusi script-->
+    <button class="tombolfadein">Fade In</button>
+    <button class="tombolfadeout">Fade Out</button>
+    <button class="tombolfadeto">Fade To 0.3</button>
+</body>
+</html>

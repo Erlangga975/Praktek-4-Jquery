@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas 2</title>
+	<style type="text/css">
+		div {
+			float: 	left;
+			margin: 5px;
+			padding: 5px;
+		}
+		#kotak1 {
+			width: 150px;
+			height: 150px;
+			background-color: yellow;
+		}
+		#kotak2 {
+			width: 150px;
+			height: 150px;
+			background-color: yellow;
+		}
+		#kotak3 {
+			width: 150px;
+			height: 150px;
+			background-color: yellow;
+		}
+		#kotak4 {
+			width: 150px;
+			height: 150px;
+			background-color: yellow;
+		}
+	</style>
+	<!-- tag untuk memangil jquery -->
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		// script untuk mengubah warna dengan mengclik 2 kali
+		$(document).ready(function(){
+		$("#kotak1").dblclick(function(){
+		$("#kotak1").css("background-color","blue");});
+		$("#kotak2").dblclick(function(){
+		$("#kotak2").css("background-color","green");});
+		$("#kotak3").dblclick(function(){
+		$("#kotak3").css("background-color","pink");});
+		$("#kotak4").dblclick(function(){
+		$("#kotak4").css("background-color","red");});
+		});
+	</script>
+</head>
+<body>
+	<p>Kilk 2x pada setiap kotak untuk mengubah warna</p>
+	<!--kotak yang di ubah warnanya-->
+	<div id="kotak1"></div>
+	<div id="kotak2"></div>
+	<div id="kotak3"></div>
+	<div id="kotak4"></div>
+</body>
+</html>
